@@ -1,654 +1,582 @@
 
-# FundiShorp — Agile Project Portfolio
+# FundiShorp – Agile Project Portfolio
 
-**Project type:** Home Improvement Marketplace  
-**Methodology:** Agile Scrum  
-**Project management tool:** Trello  
-**Frontend:** React  
-**Backend:** Java Spring Boot  
-**Database:** MySQL  
-**Version control:** Git and GitHub  
-**Project status:** Development and verification in progress
+**Student Project | Agile Project Management**
 
-**Project links:** [GitHub Repository](https://github.com/KabeloMoloko/FundiShorp-Portfolio) | [Trello Board](https://trello.com/b/aviqvFPS/fundishorp)
+## Project Overview
 
----
+FundiShorp is a proposed online platform designed to connect homeowners with fundis (skilled tradespeople) who provide home improvement, maintenance, repair and construction services. The platform also aims to allow fundis to advertise their services and building materials to potential customers.
 
-## Table of Contents
+This portfolio documents my work on the FundiShorp project using Agile project management principles. It presents the project charter, user stories, product backlog, sprint planning and supporting evidence of the work completed during the project.
 
-1. [Agile Project Charter](#1-agile-project-charter)
-2. [User Stories and Tasks](#2-user-stories-and-tasks)
-3. [Product Backlog](#3-product-backlog)
-4. [Sprint Backlog](#4-sprint-backlog)
-5. [Agile Logbook](#5-agile-logbook)
-6. [Supporting Evidence and References](#6-supporting-evidence-and-references)
+The project is being developed incrementally, with tasks and requirements organised to support planning, implementation, testing and continuous improvement.
 
----
+## 1. Agile Project Charter
 
-# 1. Agile Project Charter
+### 1.1 Project Purpose
 
-## 1.1 Project Overview
+The purpose of FundiShorp is to make it easier for homeowners to find suitable tradespeople and access services or materials needed for home improvement projects. The platform is intended to provide a central place where customers can explore available fundis and where service providers can present their offerings.
 
-FundiShorp is a proposed home-improvement marketplace that connects homeowners with fundis (tradespeople) who provide services and sell building materials.
+### 1.2 Problem Statement
 
-The platform aims to help homeowners find suitable tradespeople, compare prices, browse materials, book services, and review completed work. Fundis can register, create storefronts, manage listings, and respond to customer requests.
+Finding reliable tradespeople and comparing their services can be difficult when information is spread across different sources. Customers may also struggle to identify service providers who have been verified.
 
-The project uses Agile Scrum to organise development into manageable increments, while Trello supports backlog management, task allocation, sprint planning, and progress tracking.
+FundiShorp aims to address this problem by providing an online platform where users can find fundis, view available services and materials, and access relevant information before making decisions.
 
-## 1.2 Problem Statement
+### 1.3 Project Objectives
 
-Homeowners may struggle to find trustworthy tradespeople, compare service rates, purchase materials, and coordinate home-improvement work. Fundis may also lack a centralised platform to advertise their services and manage customer requests.
+The main objectives of the project are to:
 
-FundiShorp aims to bring these activities together in one digital marketplace.
-
-## 1.3 Project Vision
-
-To develop a trusted and accessible marketplace where homeowners can find skilled fundis, compare prices, purchase materials, and book services while enabling tradespeople to promote and grow their businesses.
-
-## 1.4 Project Objectives
-
-- Develop a React frontend connected to a Java Spring Boot backend.
-- Design and implement a MySQL database.
+- Develop a user-friendly frontend for the platform.
+- Create a backend to process application requests and manage data.
+- Design and connect a MySQL database.
 - Support homeowner and fundi registration.
-- Provide appropriate role-based access.
-- Support fundi verification and storefront management.
-- Enable product listing and pricing management.
-- Support booking requests and booking management.
-- Provide ratings and reviews where supported by the implementation.
-- Use Trello and GitHub to manage and document project work.
-- Test features and improve the product incrementally.
+- Apply role-based access according to user roles.
+- Allow fundis to manage their service or product listings.
+- Provide functionality for searching and viewing available fundis.
+- Organise project requirements and development tasks using Agile methods.
+- Document project progress and provide supporting evidence.
 
-## 1.5 Project Scope
+### 1.4 Project Scope
 
-### In scope
+**Included in the project:**
 
-- User registration and authentication.
-- Homeowner and fundi accounts.
+- User registration and login.
+- Fundi registration and profile management.
 - Role-based access control.
-- Fundi verification.
-- Storefront and product management.
-- Material and service pricing.
-- Search and discovery of fundis.
-- Booking management.
-- Shopping cart and checkout features.
-- Ratings and reviews.
-- Database and API integration.
-- Testing, documentation, and project demonstration.
+- Fundi verification-related functionality.
+- Storefront and product listing management.
+- Viewing product and service information.
+- Searching for fundis.
+- Database and backend development.
+- Agile planning and project documentation.
 
-The actual delivery status of each feature must be confirmed against the application and Trello board.
+**Outside the initial scope:**
 
-### Out of scope
+- A fully operational payment gateway.
+- A production-scale mobile application.
+- Advanced analytics and automated recommendations.
 
-Native mobile applications, international expansion, and advanced AI-based matching are not included in the initial scope unless formally approved as additional work.
+These items may be considered for future development if time and resources allow.
 
-## 1.6 Stakeholders
+### 1.5 Technologies and Tools
 
-| Stakeholder | Interest or responsibility |
+| Technology or tool | Purpose |
 |---|---|
-| Homeowners | Find fundis, compare prices, purchase materials, and book services |
-| Fundis | Register, advertise services, manage listings, and handle bookings |
-| Administrators | Manage access, review verification submissions, and oversee the platform |
-| Development team | Plan, implement, test, and document features |
-| Academic stakeholders | Review the project and its Agile evidence |
+| React | Developing the user interface |
+| Java Spring Boot | Developing backend services and API endpoints |
+| MySQL | Storing and managing application data |
+| Git and GitHub | Version control and project hosting |
+| Trello | Managing the product backlog and sprint tasks |
+| GitHub Pages | Publishing the project portfolio |
 
-## 1.7 Agile Roles
+### 1.6 Agile Approach
 
-| Role | Main responsibility |
-|---|---|
-| Product Owner | Clarifies requirements and prioritises the product backlog |
-| Scrum Master | Supports the Scrum process and helps remove blockers |
-| Development team | Builds and tests product increments |
-| Stakeholders | Provide feedback and review outcomes |
+I am using an Agile approach to organise the project into manageable tasks and prioritise the development of important features. User stories describe the needs of different users, while tasks break the work into smaller activities.
 
-Formal role assignments should be confirmed by the project team.
+Trello is used to organise the backlog and track project activities. The project can be reviewed and adjusted as development progresses, allowing requirements and priorities to be refined when necessary.
 
-## 1.8 Project Constraints and Risks
+### 1.7 Stakeholders
 
-- Limited academic project time.
-- Dependencies between the database, backend, and frontend.
-- Integration and testing complexity.
-- Authentication and authorisation risks.
-- Potential delays caused by unresolved defects or dependencies.
-- The need to keep Trello and GitHub documentation consistent.
+The main stakeholders are:
 
-## 1.9 Success Criteria
+- **Homeowners:** People who need home improvement services or building materials.
+- **Fundis:** Tradespeople who want to advertise their skills, services or products.
+- **Administrator:** A user responsible for managing platform activities and verification-related processes.
+- **Developer:** The student responsible for planning, developing, testing and documenting the project.
 
-The project will be evaluated against the following criteria:
+### 1.8 Expected Outcomes
 
-- Required user roles and access rules work correctly.
-- Database relationships and API operations behave as intended.
-- Core registration and storefront workflows are testable.
-- Product and pricing information is displayed accurately.
-- Booking workflows follow the agreed requirements.
-- User stories have clear acceptance criteria.
-- Sprint tasks and progress are documented.
-- Completed work is supported by appropriate evidence and testing.
+The expected outcome is a functional web application prototype that demonstrates the main requirements of the FundiShorp platform. The project portfolio also provides evidence of Agile planning, technical development and project documentation.
 
 ---
 
-# 2. User Stories and Tasks
+## 2. User Stories and Tasks
 
-User stories describe the functionality required by users or the development team. Tasks break each story into manageable pieces of work, while acceptance criteria define how the expected outcome can be checked.
+The following user stories describe the main requirements identified for FundiShorp. Each story represents a feature or capability from the perspective of a user or the development team.
 
-The following stories retain the IDs and core content from the existing portfolio. Their acceptance criteria describe intended results and should not be interpreted as proof that every feature has been completed.
+The screenshots provide supporting evidence of selected development activities. The presence of a screenshot does not necessarily mean that the feature has been fully tested or completed.
 
-## Epic 1: Backend Architecture and Database
+### US01 – Establish the Database Schema
 
-### US01 — Establish the Database Schema
+**User story:** As a developer, I want to create a database schema so that application data can be stored in a structured way.
 
-**User story:** As a developer, I want a structured MySQL database so that application data and relationships can be managed consistently.
+**Tasks:**
+- Identify the main entities and their attributes.
+- Define primary and foreign keys.
+- Establish relationships between database tables.
+- Create the schema in MySQL.
+- Check the relationships and constraints.
 
-**Tasks**
-- Design the entity relationship diagram.
-- Define the required entities and relationships.
-- Implement tables, constraints, and migrations where applicable.
-- Add test data.
-- Verify database operations.
-
-**Acceptance criteria**
-- Required entities and relationships are documented.
-- Foreign-key relationships are valid.
-- Required constraints are enforced.
-- Database queries can be tested.
-
-**Screenshot — Database Schema**
+**Acceptance criteria:**
+- The required tables are created.
+- Primary keys and relationships are defined where required.
+- The schema supports the planned application features.
 
 ![FundiShorp Database Schema](screenshots/databaseschema.png)
 
-### US02 — Build the Backend
+### US02 – Develop the Backend
 
-**User story:** As a developer, I want a layered Java Spring Boot backend so that business logic and data access remain organised and maintainable.
+**User story:** As a developer, I want to develop backend services so that the frontend can communicate with the database through an API.
 
-**Tasks**
-- Create domain or entity classes.
-- Implement repositories.
-- Develop service classes.
-- Create REST controllers.
-- Connect the backend to MySQL.
-- Test API operations.
+**Tasks:**
+- Set up the Spring Boot project.
+- Organise the backend into appropriate layers.
+- Create the required models, repositories and services.
+- Develop REST API endpoints.
+- Configure the database connection.
+- Test API requests and responses.
 
-**Acceptance criteria**
-- Controllers, services, and repositories have clear responsibilities.
-- API operations return appropriate responses.
-- Data is persisted and retrieved correctly.
+**Acceptance criteria:**
+- The backend starts successfully.
+- API endpoints process supported requests.
+- Database operations work for the implemented features.
 - Errors are handled appropriately.
-
-**Screenshot — Backend**
 
 ![FundiShorp Backend](screenshots/backend.png)
 
-## Epic 2: Frontend Foundation
+### US03 – Develop the Frontend
 
-### US03 — Develop the React Frontend
+**User story:** As a user, I want a clear and accessible interface so that I can navigate the platform and use its features.
 
-**User story:** As a developer, I want a reusable React frontend so that users can navigate the application and interact with its features.
+**Tasks:**
+- Set up the React application.
+- Create reusable interface components.
+- Develop the main pages and navigation.
+- Connect frontend components to available API endpoints.
+- Test page layout and navigation.
 
-**Tasks**
-- Set up the React project.
-- Build reusable components.
-- Configure routing.
-- Connect the frontend to the backend API.
-- Implement form validation.
-- Test page navigation and responsiveness.
-
-**Acceptance criteria**
-- Main routes load correctly.
-- Components use a consistent layout.
-- API requests use the intended backend.
-- Forms provide appropriate feedback.
-
-**Screenshot — Frontend**
+**Acceptance criteria:**
+- The main pages display correctly.
+- Users can navigate between available sections.
+- Implemented frontend features communicate with the backend where required.
 
 ![FundiShorp Frontend](screenshots/frontend.png)
 
-### US04 — Prepare Deployment
+### US04 – Prepare for Deployment
 
-**User story:** As a developer, I want a repeatable deployment process so that the application can be tested and released reliably.
+**User story:** As a developer, I want to prepare the application for deployment so that it can be accessed and demonstrated online.
 
-**Tasks**
-- Document the deployment environment.
-- Configure environment variables.
-- Protect credentials and secrets.
-- Prepare deployment scripts or a pipeline if required.
-- Test deployment and document errors.
+**Tasks:**
+- Review application configuration.
+- Identify hosting requirements for the frontend and backend.
+- Configure environment-specific settings.
+- Test the deployment process.
+- Document any remaining deployment limitations.
 
-**Acceptance criteria**
-- Deployment instructions are documented.
-- Secrets are not committed to GitHub.
-- The deployment result can be verified.
+**Acceptance criteria:**
+- Deployment requirements are documented.
+- The frontend can be prepared for hosting.
+- Backend and database hosting requirements are identified.
 
-**Status:** Confirm actual deployment progress before marking this story complete.
+### US05 – Register and Log In as a Homeowner
 
-## Epic 3: Accounts and Authentication
+**User story:** As a homeowner, I want to register and log in so that I can access the platform using my account.
 
-### US05 — Register as a Homeowner
+**Tasks:**
+- Create the registration interface.
+- Create the login interface.
+- Validate submitted information.
+- Connect the forms to the relevant backend endpoints.
+- Test registration and login scenarios.
 
-**User story:** As a homeowner, I want to register for an account so that I can access the marketplace.
-
-**Tasks**
-- Build the registration form.
-- Validate required fields.
-- Connect the form to the API.
-- Implement or connect authentication.
-- Test valid and invalid submissions.
-
-**Acceptance criteria**
-- Valid registration details are accepted.
-- Invalid details produce useful feedback.
-- Credentials are handled securely.
-- Successful registration follows the expected workflow.
-
-**Screenshot — User Registration**
+**Acceptance criteria:**
+- Users can submit registration details.
+- Required fields are validated.
+- Login requests are processed by the backend.
+- Feedback is provided when a request succeeds or fails.
 
 ![FundiShorp User Registration](screenshots/register.png)
 
-### US06 — Register as a Fundi
+### US06 – Register as a Fundi
 
-**User story:** As a fundi, I want to register for a trade account so that I can offer services through the marketplace.
+**User story:** As a fundi, I want to register my details so that I can offer my services through the platform.
 
-**Tasks**
-- Build the fundi registration form.
-- Capture required trade information.
-- Validate the submitted information.
+**Tasks:**
+- Create the fundi registration form.
+- Capture the required profile information.
+- Include relevant verification information where required.
 - Connect the form to the backend.
-- Test registration and error handling.
+- Test form validation and data submission.
 
-**Acceptance criteria**
-- Required fundi information can be submitted.
-- Invalid submissions are rejected.
-- The account receives the appropriate role.
-- Submitted information is handled securely.
-
-**Screenshot — Fundi Registration**
+**Acceptance criteria:**
+- Fundis can submit their registration information.
+- Required information is validated.
+- Submitted information is handled by the backend.
 
 ![FundiShorp Fundi Registration](screenshots/fundireg.png)
 
-### US07 — Manage User Roles
+### US07 – Apply Role-Based Access
 
-**User story:** As an administrator, I want role-based access control so that users can access only the functions permitted for their roles.
+**User story:** As a platform user, I want access to features appropriate to my role so that different types of users have the correct permissions.
 
-**Tasks**
-- Define role permissions.
-- Implement backend authorisation checks.
-- Protect restricted frontend routes.
-- Test authorised and unauthorised requests.
+**Tasks:**
+- Define the required user roles.
+- Associate roles with user accounts.
+- Apply access rules to relevant features.
+- Test access for different roles.
 
-**Acceptance criteria**
-- Roles have appropriate permissions.
-- Protected backend operations enforce access rules.
-- Unauthorised requests are rejected.
-
-**Screenshot — User Roles**
+**Acceptance criteria:**
+- User roles are identified.
+- Access to protected features is controlled according to the implemented rules.
+- Users cannot access restricted functions without the required permissions.
 
 ![FundiShorp User Roles](screenshots/role.png)
 
-## Epic 4: Verification and Storefronts
+### US08 – Review Fundi Verification Documents
 
-### US08 — Review Fundi Verification
+**User story:** As an administrator, I want to review fundi verification information so that I can assess whether a fundi meets the platform's verification requirements.
 
-**User story:** As an administrator, I want to review fundi verification submissions so that trade accounts can be assessed before approval.
+**Tasks:**
+- Identify the required verification information.
+- Provide a way to review submitted details.
+- Record verification decisions where implemented.
+- Test the verification workflow.
 
-**Tasks**
-- Define the verification workflow.
-- Provide access to submitted information.
-- Implement approval and rejection operations where required.
-- Test status updates and permissions.
+**Acceptance criteria:**
+- Relevant verification information can be reviewed.
+- Verification decisions can be recorded if the workflow is implemented.
+- The status is available to the relevant parts of the application.
 
-**Acceptance criteria**
-- Authorised administrators can review submissions.
-- Approval decisions are recorded.
-- Status changes are reflected correctly.
+### US09 – Display a Verified Badge
 
-### US09 — Display Verification Status
+**User story:** As a homeowner, I want to identify verified fundis so that I can make a more informed decision when selecting a service provider.
 
-**User story:** As a homeowner, I want to identify verified fundis so that I can make more informed choices.
+**Tasks:**
+- Define the verification status used by the application.
+- Connect the status to the fundi profile.
+- Display the badge when the required conditions are met.
+- Test verified and unverified profiles.
 
-**Tasks**
-- Connect storefronts to verification status.
-- Display the appropriate status indicator.
-- Test approved and unapproved accounts.
+**Acceptance criteria:**
+- Verification status is represented consistently.
+- A verified badge is displayed only when the required verification condition is satisfied.
 
-**Acceptance criteria**
-- Verification status reflects trusted application data.
-- The interface does not incorrectly label unverified accounts as verified.
+### US10 – Create a Storefront
 
-### US10 — Create and Manage a Fundi Storefront
+**User story:** As a fundi, I want to create a storefront so that customers can view information about my services or products.
 
-**User story:** As a fundi, I want to manage my storefront so that customers can learn about my services and business.
+**Tasks:**
+- Design the storefront interface.
+- Capture storefront information.
+- Connect storefront data to the backend.
+- Display the information on the relevant page.
 
-**Tasks**
-- Build the storefront interface.
-- Display relevant business and trade information.
-- Implement create, read, update, and delete operations where required.
-- Test saving and retrieving storefront information.
-
-**Acceptance criteria**
-- Storefront information can be managed by authorised users.
-- Saved information is displayed correctly.
-- Unauthorised edits are rejected.
-
-**Screenshot — Fundi Interface**
+**Acceptance criteria:**
+- A fundi can provide storefront information where the feature is implemented.
+- Storefront information is displayed appropriately.
+- The interface supports the planned service or product listings.
 
 ![FundiShorp Fundi Interface](screenshots/fundis.png)
 
-## Epic 5: Product Listings and Pricing
+### US11 – Add Products and Building Materials
 
-### US11 — Add Products and Materials
+**User story:** As a fundi, I want to add products or building materials so that customers can view what I offer.
 
-**User story:** As a fundi, I want to add products and materials so that customers can browse available items.
+**Tasks:**
+- Create a product listing form.
+- Capture product details and prices.
+- Validate submitted information.
+- Save listing information through the backend.
+- Display available listings.
 
-**Tasks**
-- Build the product form.
-- Implement the listing API.
-- Validate product details and prices.
-- Support product images where required.
-- Test saving and displaying listings.
+**Acceptance criteria:**
+- Required product information is validated.
+- Product details can be saved when the feature is connected.
+- Saved listings can be retrieved for display.
 
-**Acceptance criteria**
-- Valid listings can be saved.
-- Product details and prices display correctly.
-- Invalid information is rejected.
+### US12 – Edit and Remove Listings
 
-### US12 — Edit and Remove Listings
+**User story:** As a fundi, I want to edit or remove my listings so that I can keep my information up to date.
 
-**User story:** As a fundi, I want to update or remove my listings so that my storefront remains accurate.
+**Tasks:**
+- Implement listing retrieval.
+- Add an edit function.
+- Add a delete function.
+- Apply appropriate access restrictions.
+- Test changes and removal.
 
-**Tasks**
-- Implement edit and delete operations.
-- Add the relevant interface controls.
-- Test updates and removal.
-- Enforce ownership and permissions.
+**Acceptance criteria:**
+- Authorised users can update their listings.
+- Authorised users can remove their listings.
+- Changes are reflected in the stored data.
 
-**Acceptance criteria**
-- Authorised fundis can update their own listings.
-- Removed listings are no longer offered as available.
-- Unauthorised changes are rejected.
+### US13 – View Product Details
 
-### US13 — View Product Details
+**User story:** As a homeowner, I want to view product details so that I can understand what is being offered before making a decision.
 
-**User story:** As a homeowner, I want to view product details so that I can make informed purchasing decisions.
+**Tasks:**
+- Create a product details page or component.
+- Display available descriptions and prices.
+- Retrieve listing information from the backend.
+- Test the display of available product information.
 
-**Tasks**
-- Create a product details view.
-- Display product information and images.
-- Retrieve details from the backend.
-- Test missing or invalid product references.
+**Acceptance criteria:**
+- Relevant product details are displayed.
+- The correct listing information is shown.
+- Missing or unavailable information is handled appropriately.
 
-**Acceptance criteria**
-- The correct product information is displayed.
-- Prices and availability reflect saved data.
-- Missing products are handled appropriately.
+### US14 – Set Labour and Callout Rates
 
-### US14 — Manage Booking and Service Pricing
+**User story:** As a fundi, I want to provide my labour and callout rates so that customers can understand the costs associated with my services.
 
-**User story:** As a fundi, I want to manage service rates and booking information so that customers can understand the services I offer.
+**Tasks:**
+- Define the required rate fields.
+- Provide a form for entering rates.
+- Validate the rate values.
+- Save and retrieve the information.
+- Display rates where applicable.
 
-**Tasks**
-- Develop the relevant pricing and booking interface.
-- Connect the interface to the backend.
-- Validate submitted values.
-- Test saving and retrieving information.
+**Acceptance criteria:**
+- Rate information is validated.
+- Saved rates can be retrieved when the feature is implemented.
+- Customers can view the available pricing information.
 
-**Acceptance criteria**
-- Permitted information can be updated.
-- Saved values display correctly.
-- Invalid values are rejected.
+![FundiShorp Booking and Pricing Evidence](screenshots/booking.png)
 
-**Screenshot — Booking Management**
+### US15 – Display Combined Job Pricing
 
-![FundiShorp Booking Management](screenshots/booking.png)
+**User story:** As a homeowner, I want to view the available job pricing information so that I can better understand the potential cost of a service.
 
-### US15 — Display Job Pricing
+**Tasks:**
+- Identify the pricing information required.
+- Define how labour and callout rates should be presented.
+- Display the available pricing information.
+- Test the displayed values.
 
-**User story:** As a homeowner, I want to understand material and service costs so that I can estimate the cost of a job before proceeding.
+**Acceptance criteria:**
+- Available pricing information is presented clearly.
+- The displayed amounts correspond to the relevant service or fundi.
+- Any estimate is clearly distinguished from a confirmed final price.
 
-**Tasks**
-- Display material and service prices.
-- Calculate totals where supported.
-- Separate different cost components.
-- Test calculations and displayed values.
+### US16 – Search for Verified Fundis
 
-**Acceptance criteria**
-- Cost components are clearly identified.
-- Totals are calculated correctly.
-- Unconfirmed charges are not presented as final costs.
+**User story:** As a homeowner, I want to search for fundis so that I can find service providers who match my needs.
 
-## Epic 6: Search, Cart and Customer Workflows
-
-### US16 — Search for Fundis
-
-**User story:** As a homeowner, I want to search for fundis by relevant criteria so that I can find a suitable tradesperson.
-
-**Tasks**
-- Create search and filter controls.
-- Implement the search API.
+**Tasks:**
+- Create the search interface.
+- Retrieve relevant fundi information.
+- Provide filtering or search criteria where supported.
 - Display matching results.
-- Test searches with different criteria.
+- Test search results and empty searches.
 
-**Acceptance criteria**
-- Search results match the submitted criteria.
-- Empty results are handled clearly.
-- Verification status is displayed accurately where supported.
+**Acceptance criteria:**
+- Users can search using the supported criteria.
+- Matching fundis are displayed.
+- Empty results are handled appropriately.
+- Verification information is displayed accurately where available.
 
-### Additional Backlog Stories
+### Additional Stories for Future Development
 
-The following are additional product capabilities to track where they are included in the approved scope. Confirm their status and priority against Trello.
+The following stories are possible extensions to the product backlog. They should be treated as planned or proposed work until their implementation is confirmed.
 
-**US17 — Manage the Shopping Cart**
+### US17 – Submit a Service Booking Request
 
-As a homeowner, I want to manage selected products so that I can review my intended purchases.
+**User story:** As a homeowner, I want to submit a booking request so that I can request a service from a fundi.
 
-Tasks: Add items, update quantities, remove items, and calculate totals.
+**Acceptance criteria:**
+- A homeowner can submit the required booking details.
+- The request is stored if the booking functionality is implemented.
+- The relevant status can be viewed by authorised users.
 
-**US18 — Submit a Booking Request**
+### US18 – Review a Fundi
 
-As a homeowner, I want to request a service booking so that I can arrange work with a fundi.
+**User story:** As a homeowner, I want to submit a review after receiving a service so that I can share feedback about my experience.
 
-Tasks: Select a service, submit booking details, save the request, and display its status.
+**Acceptance criteria:**
+- A review can be submitted through the implemented interface.
+- Review data is validated and stored.
+- Reviews are associated with the relevant fundi.
 
-**US19 — Manage Reviews and Ratings**
+### US19 – Manage Booking Requests
 
-As a homeowner, I want to review an eligible completed service so that I can share feedback about my experience.
+**User story:** As a fundi, I want to view and manage booking requests so that I can respond to potential customers.
 
-Tasks: Submit a rating, validate review eligibility, save feedback, and display permitted reviews.
+**Acceptance criteria:**
+- Relevant booking requests can be viewed.
+- A fundi can update a request's status where the feature is implemented.
+- Changes are reflected in the stored information.
 
-**US20 — Administrative Oversight**
+### US20 – Administer Platform Information
 
-As an administrator, I want to oversee users and relevant platform activity so that the marketplace can be managed appropriately.
+**User story:** As an administrator, I want to manage relevant platform information so that the application can be maintained appropriately.
 
-Tasks: Review user information, enforce permissions, and test administrative actions.
+**Acceptance criteria:**
+- Administrative functions are restricted to authorised users.
+- Supported management actions are recorded or reflected in the application.
+- Invalid actions are handled appropriately.
 
 ---
 
-# 3. Product Backlog
+## 3. Product Backlog
 
-The Product Backlog is the prioritised list of product features, improvements, and requirements. It changes as the team receives feedback, discovers dependencies, and refines requirements.
+The product backlog contains the features and improvements identified for the FundiShorp project. Items are organised according to their importance to the project's objectives.
 
-The priorities below are **proposed starting priorities**, not confirmed Trello rankings. Confirm them with the Product Owner.
+The priorities below are proposed priorities for documentation purposes. The Trello board should be treated as the working source for the latest task status and sprint allocation.
 
-| ID | Product backlog item | Priority | Status |
+| ID | Backlog item | Priority | Status |
 |---|---|---|---|
-| US01 | Database schema | High | Verify in Trello |
-| US02 | Backend architecture and API | High | Verify in Trello |
-| US03 | React frontend | High | Verify in Trello |
-| US04 | Deployment preparation | Medium | Verify in Trello |
-| US05 | Homeowner registration | High | Verify in Trello |
+| US01 | Establish database schema | High | Verify in Trello |
+| US02 | Develop backend services | High | Verify in Trello |
+| US03 | Develop React frontend | High | Verify in Trello |
+| US04 | Prepare for deployment | Medium | Verify in Trello |
+| US05 | Homeowner registration and login | High | Verify in Trello |
 | US06 | Fundi registration | High | Verify in Trello |
 | US07 | Role-based access | High | Verify in Trello |
 | US08 | Fundi verification review | Medium | Verify in Trello |
-| US09 | Verification status indicator | Medium | Verify in Trello |
-| US10 | Fundi storefront management | High | Verify in Trello |
-| US11 | Create product listings | High | Verify in Trello |
-| US12 | Edit and remove listings | High | Verify in Trello |
-| US13 | Product details | Medium | Verify in Trello |
-| US14 | Booking and service pricing | High | Verify in Trello |
-| US15 | Job pricing display | Medium | Verify in Trello |
-| US16 | Search for fundis | High | Verify in Trello |
-| US17 | Shopping cart | Medium | Verify in Trello |
-| US18 | Booking requests | High | Verify in Trello |
-| US19 | Reviews and ratings | Medium | Verify in Trello |
-| US20 | Administrative oversight | Medium | Verify in Trello |
+| US09 | Verified fundi badge | Medium | Verify in Trello |
+| US10 | Create a storefront | High | Verify in Trello |
+| US11 | Add product and material listings | High | Verify in Trello |
+| US12 | Edit and remove listings | Medium | Verify in Trello |
+| US13 | View product details | Medium | Verify in Trello |
+| US14 | Set labour and callout rates | Medium | Verify in Trello |
+| US15 | Display job pricing | Medium | Verify in Trello |
+| US16 | Search for verified fundis | High | Verify in Trello |
+| US17 | Submit booking requests | Future | Proposed |
+| US18 | Submit reviews | Future | Proposed |
+| US19 | Manage booking requests | Future | Proposed |
+| US20 | Administer platform information | Future | Proposed |
 
-## Product Backlog Management
+The backlog can be updated as requirements change, new issues are identified or tasks are completed. The priority and status of each item should be reviewed against the current Trello board.
 
-The team should:
-
-- Refine stories before selecting them for a sprint.
-- Prioritise work according to value, risk, and dependencies.
-- Break large stories into smaller tasks.
-- Define acceptance criteria for each story.
-- Update priorities and statuses in Trello.
-- Add new work when requirements change.
-
-**Source of truth:** [FundiShorp Trello Board](https://trello.com/b/aviqvFPS/fundishorp)
+**Trello project board:** [View the FundiShorp board](https://trello.com/b/aviqvFPS/fundishorp)
 
 ---
 
-# 4. Sprint Backlog
+## 4. Sprint Backlog
 
-The Sprint Backlog contains the work selected for a sprint, the sprint goal, and the tasks required to deliver the selected increment.
+The sprint backlog contains the items selected for work during a sprint, together with the tasks required to achieve the sprint goal.
 
-The actual sprint assignments and completion statuses must be taken from the Trello board. The table below is a template for documenting the current sprint without inventing completion dates or results.
+For this project, Trello is used to organise work into backlog and sprint lists. The actual sprint allocation, task owners and completion status should be checked against the board.
 
-## 4.1 Sprint Planning
+### 4.1 Sprint Planning
 
-| Planning item | Details |
-|---|---|
-| Sprint number | Enter the actual sprint number |
-| Sprint dates | Enter the actual start and end dates |
-| Sprint goal | State the intended outcome |
-| Selected stories | Record the Trello story IDs |
-| Team capacity | Record available team capacity |
-| Dependencies | Record tasks or features that must be completed first |
+During sprint planning, the selected user stories should be reviewed and divided into smaller tasks. The tasks should be realistic for the available time and should contribute towards a clear sprint goal.
 
-## 4.2 Sprint Tasks
+Examples of development tasks include:
 
-| User story | Task | Assigned to | Status |
-|---|---|---|---|
-| US01 | Implement and verify database relationships | Confirm in Trello | Confirm in Trello |
-| US02 | Implement backend API operations | Confirm in Trello | Confirm in Trello |
-| US03 | Connect frontend components to the API | Confirm in Trello | Confirm in Trello |
-| US05 | Implement and test registration | Confirm in Trello | Confirm in Trello |
-| US07 | Verify role-based permissions | Confirm in Trello | Confirm in Trello |
-| US10 | Implement storefront management | Confirm in Trello | Confirm in Trello |
-| US11 | Implement product listing operations | Confirm in Trello | Confirm in Trello |
-| US18 | Implement booking requests | Confirm in Trello | Confirm in Trello |
+- Creating or updating database tables.
+- Developing backend API endpoints.
+- Building React components.
+- Connecting the frontend to the backend.
+- Testing API requests and database operations.
+- Correcting identified errors.
+- Updating project documentation.
 
-Only retain tasks that were actually selected for the sprint. Remove items that are not part of the current sprint and add the tasks shown on the actual board.
+### 4.2 Sprint Task Tracking
 
-## 4.3 Sprint Execution
+The following table is a template for recording sprint work. It should be updated using the actual information from Trello.
 
-For each selected task, record:
+| User story or task | Expected outcome | Status |
+|---|---|---|
+| Database development | Required database structure | Confirm in Trello |
+| Backend development | Required API functionality | Confirm in Trello |
+| Frontend development | Required user interface | Confirm in Trello |
+| Integration | Frontend and backend communication | Confirm in Trello |
+| Testing | Evidence of testing and corrections | Confirm in Trello |
+| Documentation | Updated project records | Confirm in Trello |
 
-- What work needs to be done.
-- Who is responsible.
-- Dependencies or blockers.
-- Evidence of implementation.
-- Testing results.
-- Whether the acceptance criteria have been met.
+### 4.3 Sprint Review
 
-## 4.4 Sprint Review
+A sprint review should be used to assess the work completed during the sprint. The review should identify which requirements have been demonstrated, which tasks remain incomplete and what should be prioritised next.
 
-At the end of a sprint, document:
+### 4.4 Sprint Retrospective
 
-- Features demonstrated.
-- Acceptance criteria met.
-- Outstanding work.
-- Stakeholder feedback.
-- Items returned to or added to the Product Backlog.
+A retrospective should consider what went well, what challenges occurred and what improvements can be made during the next sprint.
 
-## 4.5 Sprint Planning Evidence
+Possible areas to review include:
 
-![FundiShorp Trello Sprint Planning Board](screenshots/trello.png)
+- Task estimation and time management.
+- Database and API integration.
+- Testing and debugging.
+- Communication and task tracking.
+- Updating documentation as the project develops.
 
-*The screenshot provides supporting evidence of project organisation. Update this section with the actual sprint goal, selected stories, and outcomes for the sprint being documented.*
+### 4.5 Trello Evidence
+
+The Trello board provides supporting evidence of the project's backlog and sprint organisation.
+
+![FundiShorp Trello Board](screenshots/trello.png)
 
 ---
 
-# 5. Agile Logbook
+## 5. Agile Logbook
 
-The Agile Logbook records the work performed throughout development. It should show progress, decisions, challenges, solutions, and lessons learned.
+The Agile logbook is intended to record project activities, progress, challenges and lessons learned. Entries should reflect the actual work performed during the project.
 
-Record actual events and dates. Do not mark work as completed unless there is supporting evidence.
+### 5.1 Work Session Record
 
-## 5.1 Sprint Logbook
+Use the following structure to document each work session or sprint activity.
 
-| Date / Sprint | Activities performed | Evidence or outcome | Challenges and lessons |
+| Date | Activity | Outcome | Challenges or next steps |
 |---|---|---|---|
-| Enter actual date | Record work completed | Link to commit, screenshot, or Trello card | Record actual findings |
-| Enter actual date | Record work completed | Link to commit, screenshot, or Trello card | Record actual findings |
-| Enter actual date | Record work completed | Link to commit, screenshot, or Trello card | Record actual findings |
+| Add actual date | Describe the work performed | Record the result | Record issues or follow-up tasks |
 
-Add rows as the project progresses.
+Additional entries should be added as the project progresses.
 
-## 5.2 Daily or Work-Session Log
+### 5.2 Sprint Reflection
 
-For detailed work sessions, use the following format:
+At the end of each sprint, the following questions can be used to reflect on progress:
 
-**Date:** Enter date  
-**Sprint:** Enter sprint number  
-**User story:** Enter story ID  
-**Planned task:** Describe the intended work  
-**Work completed:** Describe what was actually done  
-**Testing performed:** Record tests and results  
-**Blockers:** Record issues that prevented progress  
-**Next action:** Identify the next task  
-**Evidence:** Link to the relevant Trello card, GitHub commit, or screenshot
+1. Which tasks were completed?
+2. Which tasks remain incomplete, and why?
+3. What problems were encountered?
+4. What was learned during development?
+5. What changes should be made in the next sprint?
 
-## 5.3 Retrospective and Continuous Improvement
+### 5.3 Lessons Learned
 
-At the end of each sprint, reflect on the following:
+The following areas are important to reflect on during development:
 
-### What went well?
-Record successful practices, completed work, and effective collaboration.
+- **Database design:** Relationships and constraints should be planned carefully before integrating application features.
+- **API integration:** Frontend requests should match the backend endpoints, request formats and response structures.
+- **Testing:** Features should be tested after implementation, including unsuccessful and invalid requests.
+- **Task management:** Large tasks should be broken into smaller activities that are easier to track.
+- **Documentation:** Project evidence and progress records should be updated as work is completed.
 
-### What did not go well?
-Identify delays, unclear requirements, technical problems, or missed expectations.
-
-### What will be improved?
-Specify practical actions, such as clarifying acceptance criteria, testing API endpoints earlier, or improving task allocation.
-
-### Follow-up actions
-
-| Improvement action | Responsible person | Target sprint | Status |
-|---|---|---|---|
-| Enter agreed action | Confirm owner | Enter sprint | Update from Trello |
-| Enter agreed action | Confirm owner | Enter sprint | Update from Trello |
+These are areas for reflection, not a claim that every issue has already been resolved. Specific lessons should be recorded based on actual project experience.
 
 ---
 
-# 6. Supporting Evidence and References
+## 6. Supporting Evidence and References
 
-## 6.1 Project Management Evidence
+This section provides links and screenshots that support the project documentation.
 
-The Trello board supports the documentation of user stories, task breakdown, sprint planning, and progress tracking.
+### 6.1 Project Links
 
-- [FundiShorp Trello Board](https://trello.com/b/aviqvFPS/fundishorp)
 - [FundiShorp GitHub Repository](https://github.com/KabeloMoloko/FundiShorp-Portfolio)
+- [FundiShorp GitHub Pages Portfolio](https://kabelomoloko.github.io/FundiShorp-Portfolio/)
+- [FundiShorp Trello Board](https://trello.com/b/aviqvFPS/fundishorp)
 
-## 6.2 Screenshot Index
+### 6.2 Screenshot Evidence
 
-The following screenshots are stored in the repository and referenced in the relevant user-story sections above.
+The following screenshots are stored in the repository's `screenshots` folder:
 
-| Screenshot | Purpose |
+| Screenshot | Evidence provided |
 |---|---|
-| `screenshots/databaseschema.png` | Database schema |
-| `screenshots/backend.png` | Backend |
-| `screenshots/frontend.png` | Frontend |
-| `screenshots/register.png` | User registration |
-| `screenshots/fundireg.png` | Fundi registration |
-| `screenshots/role.png` | User roles |
-| `screenshots/fundis.png` | Fundi interface |
-| `screenshots/booking.png` | Booking management |
-| `screenshots/trello.png` | Trello project board |
+| `databaseschema.png` | Database schema |
+| `backend.png` | Backend development |
+| `frontend.png` | Frontend development |
+| `register.png` | User registration interface |
+| `fundireg.png` | Fundi registration interface |
+| `role.png` | User roles |
+| `fundis.png` | Fundi interface |
+| `booking.png` | Booking or pricing-related interface |
+| `trello.png` | Agile project board |
 
-## 6.3 References
+These screenshots are included to demonstrate selected aspects of the project. The implementation and testing status of each feature should be confirmed separately.
 
-- [The Scrum Guide](https://scrumguides.org/scrum-guide.html) — Scrum roles, events, artefacts, and commitments.
-- [GitHub Markdown Documentation](https://docs.github.com/en/get-started/writing-on-github) — README formatting and Markdown.
-- [FundiShorp GitHub Repository](https://github.com/KabeloMoloko/FundiShorp-Portfolio) — Project documentation and screenshot evidence.
-- [FundiShorp Trello Board](https://trello.com/b/aviqvFPS/fundishorp) — Product backlog and project task tracking.
+### 6.3 References
+
+- Scrum Guides. *The Scrum Guide.* https://scrumguides.org/
+- GitHub Docs. *About READMEs.* https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes
+- GitHub Docs. *GitHub Pages.* https://docs.github.com/en/pages
 
 ---
 
-**Portfolio note:** This document describes the intended functionality and Agile planning approach for FundiShorp. Actual implementation status, sprint results, and completed acceptance criteria should be verified against the application, GitHub commits, test results, and Trello board.
+## Conclusion
+
+Working on FundiShorp has allowed me to apply Agile project management concepts while developing a web application. The project combines requirements planning, user stories, backlog management, frontend development, backend development and database design.
+
+This portfolio brings the main project documentation and selected development evidence together in one place. As development continues, I will update the backlog, record progress in the Agile logbook, test implemented features and revise the documentation to reflect the actual state of the application.
+
