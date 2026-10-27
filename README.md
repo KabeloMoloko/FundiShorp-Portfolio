@@ -366,6 +366,10 @@ The team identifies strengths, problems, and actions to improve the next sprint.
 
 ---
 
+## Trello Project Management Board
+
+![FundiShorp Trello Board](screenshots/trello.png)
+
 # 6. User Stories and Tasks
 
 The user stories below are based on the FundiShorp cards in the Trello export. The tasks summarise the work described in the card checklists.
@@ -505,6 +509,9 @@ Acceptance criteria are included to make the expected results testable. Verify t
 ### US07 — Enforce role-based access
 
 **User story:** As an administrator, I want role-based access control so that only authorised users can access protected functions.
+## User Roles and Permissions
+
+![FundiShorp User Roles](screenshots/role.png)
 
 **Tasks:**
 - Define the homeowner, fundi, and administrator permissions.
@@ -625,6 +632,9 @@ Acceptance criteria are included to make the expected results testable. Verify t
 ### US14 — Set labour and callout rates
 
 **User story:** As a fundi, I want to set my callout fee and hourly or job rate so that customers can see service pricing upfront.
+## Booking Management
+
+![FundiShorp Booking Management](screenshots/booking.png)
 
 **Tasks:**
 - Design the rate-setting form.
