@@ -1,7 +1,8 @@
 
 # FundiShorp – Agile Project Portfolio
 
-**Student Project | Agile Project Management**
+![FundiShorp Website](screenshots/web.png)
+
 
 ## Project Overview
 
