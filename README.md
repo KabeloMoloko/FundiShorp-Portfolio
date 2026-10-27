@@ -445,98 +445,193 @@ The backlog can be updated as requirements change, new issues are identified or 
 
 ---
 
+
 ## 4. Sprint Backlog
 
-The sprint backlog contains the items selected for work during a sprint, together with the tasks required to achieve the sprint goal.
+The sprint backlog contains the user stories and development tasks selected for implementation during a sprint. For FundiShorp, I used an incremental approach to organise the work into database development, application development, feature integration, testing and documentation.
 
-For this project, Trello is used to organise work into backlog and sprint lists. The actual sprint allocation, task owners and completion status should be checked against the board.
+The tasks were broken down into smaller activities so that I could track progress, identify technical problems and determine what needed to be completed next. Trello was used to organise the backlog and monitor the project tasks.
 
-### 4.1 Sprint Planning
+### 4.1 Sprint 1 – Database and Project Setup
 
-During sprint planning, the selected user stories should be reviewed and divided into smaller tasks. The tasks should be realistic for the available time and should contribute towards a clear sprint goal.
+**Sprint goal:** Establish the technical foundation required for the FundiShorp application.
 
-Examples of development tasks include:
+| User story | Development task | Expected result | Status |
+|---|---|---|---|
+| US01 – Database schema | Identify the main entities and relationships. | Database structure supports the planned features. | Verify against MySQL |
+| US01 – Database schema | Create the required tables, keys and relationships in MySQL. | Tables and relationships are available for development. | Verify against MySQL |
+| US02 – Backend | Configure the Spring Boot project and database connection. | Backend is configured to communicate with MySQL. | Test connection |
+| US03 – Frontend | Review the React project structure and main pages. | Frontend structure is ready for feature integration. | Verify in application |
 
-- Creating or updating database tables.
-- Developing backend API endpoints.
-- Building React components.
-- Connecting the frontend to the backend.
-- Testing API requests and database operations.
-- Correcting identified errors.
-- Updating project documentation.
+**Sprint review:** The database, backend and frontend form the foundation of the project. The next step is to test the database connection and confirm that the application components can communicate correctly.
 
-### 4.2 Sprint Task Tracking
+### 4.2 Sprint 2 – User Registration and Access Control
 
-The following table is a template for recording sprint work. It should be updated using the actual information from Trello.
+**Sprint goal:** Develop the account-related functionality needed for homeowners and fundis.
 
-| User story or task | Expected outcome | Status |
+| User story | Development task | Expected result | Status |
+|---|---|---|---|
+| US05 – Homeowner registration | Develop and validate the registration form. | Users can submit the required registration details. | Test in application |
+| US05 – Login | Connect login requests to the relevant backend endpoint. | Login requests are processed by the backend. | Verify API and authentication |
+| US06 – Fundi registration | Capture the required fundi profile information. | Fundi registration details can be submitted. | Test in application |
+| US07 – User roles | Define roles and the relevant access restrictions. | Access rules are applied to protected features. | Verify permissions |
+| US08 – Verification | Identify and display the information required for fundi verification. | Verification information can be reviewed where implemented. | Verify workflow |
+
+**Sprint review:** Registration and access control are important because the platform has different user types. Testing should include valid and invalid registration details and checks that users cannot access restricted functions without the required permissions.
+
+### 4.3 Sprint 3 – Fundi Profiles and Product Listings
+
+**Sprint goal:** Develop the functionality that allows fundis to present their services and products.
+
+| User story | Development task | Expected result | Status |
+|---|---|---|---|
+| US09 – Verified badge | Display the fundi verification status where available. | Verification status is presented accurately. | Verify status logic |
+| US10 – Storefront | Develop the fundi storefront interface. | Fundi information can be displayed. | Verify in application |
+| US11 – Product listings | Create the form for product and building material details. | Listing details can be submitted. | Test API integration |
+| US12 – Listing management | Implement update and delete operations for listings. | Authorised users can manage their listings. | Test CRUD operations |
+| US13 – Product details | Display the details of a selected listing. | Customers can view available product information. | Verify displayed data |
+| US14 – Pricing | Capture and display labour and callout rates. | Available service pricing is presented clearly. | Verify calculations and display |
+
+**Sprint review:** The storefront and listing features help fundis present their offerings. The main focus is to confirm that listing information is validated, saved correctly and displayed consistently.
+
+### 4.4 Sprint 4 – Booking, Reviews and API Integration
+
+**Sprint goal:** Integrate customer-facing features with the backend and database, and test the relevant operations.
+
+| User story | Development task | Expected result | Status |
+|---|---|---|---|
+| US16 – Fundi search | Implement or review the search interface and available criteria. | Users can search for matching fundis where supported. | Test search results |
+| Booking management | Connect the booking interface to the relevant API endpoints. | Booking information can be retrieved and managed where implemented. | Verify API and database |
+| Reviews and ratings | Develop the review submission functionality. | Review information can be submitted and validated. | Test submission |
+| Reviews and ratings | Implement or test review retrieval, editing and deletion where supported. | Review records can be managed through the API. | Test CRUD operations |
+| Database integration | Check whether submitted records are saved in MySQL. | Stored records match successful requests. | Verify with SQL queries |
+| Error handling | Test invalid input and unsuccessful requests. | The application provides appropriate error feedback. | Test and record issues |
+
+**Sprint review:** This sprint focuses on connecting the user interface to the backend rather than relying on interface appearance alone. Postman can be used to test API requests, while MySQL queries can confirm whether the relevant data has been stored or updated.
+
+### 4.5 Sprint 5 – Testing, Corrections and Portfolio Preparation
+
+**Sprint goal:** Verify the implemented functionality, resolve outstanding issues and prepare the project portfolio for assessment.
+
+| Task | Expected result | Status |
 |---|---|---|
-| Database development | Required database structure | Confirm in Trello |
-| Backend development | Required API functionality | Confirm in Trello |
-| Frontend development | Required user interface | Confirm in Trello |
-| Integration | Frontend and backend communication | Confirm in Trello |
-| Testing | Evidence of testing and corrections | Confirm in Trello |
-| Documentation | Updated project records | Confirm in Trello |
+| Test registration and login | Confirm expected responses for valid and invalid inputs. | Outstanding verification |
+| Test database operations | Check records created, retrieved, updated or deleted through the API. | Outstanding verification |
+| Test reviews and ratings | Confirm review persistence and supported management operations. | Outstanding verification |
+| Test booking management | Confirm booking data and status changes where implemented. | Outstanding verification |
+| Check frontend and backend integration | Confirm that requests and responses use the expected formats. | Outstanding verification |
+| Correct identified defects | Resolve and retest issues found during testing. | As issues are identified |
+| Update README and Agile logbook | Document project activities, user stories and supporting evidence. | Update before submission |
+| Check screenshots on GitHub Pages | Confirm that all referenced images display correctly. | Final portfolio check |
 
-### 4.3 Sprint Review
+**Sprint review:** The purpose of this sprint is to assess the application against its requirements, identify remaining work and ensure that the portfolio accurately represents the state of the project.
 
-A sprint review should be used to assess the work completed during the sprint. The review should identify which requirements have been demonstrated, which tasks remain incomplete and what should be prioritised next.
+### 4.6 Sprint Tracking and Evidence
 
-### 4.4 Sprint Retrospective
+The following Trello board is used to organise project tasks and review their current status.
 
-A retrospective should consider what went well, what challenges occurred and what improvements can be made during the next sprint.
-
-Possible areas to review include:
-
-- Task estimation and time management.
-- Database and API integration.
-- Testing and debugging.
-- Communication and task tracking.
-- Updating documentation as the project develops.
-
-### 4.5 Trello Evidence
-
-The Trello board provides supporting evidence of the project's backlog and sprint organisation.
+[FundiShorp Trello Board](https://trello.com/b/aviqvFPS/fundishorp)
 
 ![FundiShorp Trello Board](screenshots/trello.png)
+
+The screenshots in the `screenshots` folder provide supporting evidence of selected application interfaces and development activities. They should be considered alongside functional testing results when determining whether a feature is complete.
+
+### 4.7 Sprint Review and Retrospective
+
+At the end of each sprint, I review the work against the sprint goal and identify any unfinished tasks.
+
+The main areas I need to consider are:
+
+- Whether the implemented features meet their acceptance criteria.
+- Whether frontend requests reach the correct backend endpoints.
+- Whether database records are saved and retrieved correctly.
+- Whether invalid requests and errors are handled appropriately.
+- Whether outstanding work has been recorded in Trello.
+- What should be prioritised during the next sprint.
+
+This process helps me make improvements incrementally and maintain a clear record of the project's development.
 
 ---
 
 ## 5. Agile Logbook
 
-The Agile logbook is intended to record project activities, progress, challenges and lessons learned. Entries should reflect the actual work performed during the project.
+This logbook records my progress while planning, developing and documenting the FundiShorp project. I used it to reflect on the work completed, challenges encountered and tasks that still needed attention. I also used Trello to organise the project requirements and development activities.
 
-### 5.1 Work Session Record
+The project was developed incrementally. Some activities focused on planning and implementation, while others involved troubleshooting, testing and improving the project documentation.
 
-Use the following structure to document each work session or sprint activity.
+### 5.1 Development Activity Log
 
-| Date | Activity | Outcome | Challenges or next steps |
+| Date | Activity and Work Performed | Outcome and Evidence | Challenges and Next Steps |
 |---|---|---|---|
-| Add actual date | Describe the work performed | Record the result | Record issues or follow-up tasks |
-
-Additional entries should be added as the project progresses.
+| 9 October 2026 | Reviewed the existing FundiShorp application to identify incomplete features and areas that needed improvement. I also considered how the database should connect to the application. | Identified database integration and application functionality as important areas for further development. | Review the database structure, confirm the required relationships and plan the connection between the frontend, backend and database. |
+| 22 October 2026 | Worked on bringing the application components together and reviewing the React frontend and backend project files. | Continued the integration work and identified areas that required testing to confirm that the components communicated correctly. | Test the API endpoints and verify that information submitted through the frontend is processed correctly by the backend. |
+| 23 October 2026 | Worked on event-related API operations and checked how submitted information could be stored in MySQL. Used Postman to test requests and investigate connection and request-format errors. | Worked through API testing issues and continued checking the relationship between the API responses and database records. | Continue testing valid and invalid requests, confirm that records are saved correctly, and check the results directly in MySQL. |
+| 24 October 2026 | Continued development of the Reviews and Ratings functionality. Worked on the API operations for creating, retrieving, editing and deleting review records, and on connecting the React Reviews and Reports page to the API. | Established the main review-management tasks and continued the integration work needed to persist reviews in MySQL. | Verify each CRUD operation, confirm that reviews remain in the database after refreshing the page, and test error handling. |
+| 27 October 2026 | Updated the FundiShorp project portfolio and organised screenshots showing selected parts of the website, frontend, backend, database schema, registration, roles, booking management, reviews and verification interfaces. | Added supporting screenshots to the repository and improved the structure of the project documentation. | Check that all image paths work on GitHub Pages, ensure that the screenshots match the relevant user stories, and review the final portfolio before submission. |
 
 ### 5.2 Sprint Reflection
 
-At the end of each sprint, the following questions can be used to reflect on progress:
+#### Reflection on Planning and Development
 
-1. Which tasks were completed?
-2. Which tasks remain incomplete, and why?
-3. What problems were encountered?
-4. What was learned during development?
-5. What changes should be made in the next sprint?
+During this project, I learned that developing a web application involves more than creating pages that look correct. The frontend, backend and database must work together for information to be processed and stored reliably.
+
+One of the main areas requiring attention was API integration. Testing requests helped me identify problems with request formats, connections and the way the application communicates with the backend. This showed me the importance of testing individual components before relying on the complete application.
+
+I also learned that features such as reviews and ratings require both frontend and backend work. A review form alone is not sufficient; the application must also validate the submitted information, process the request and store the data correctly.
+
+#### What Went Well
+
+- Breaking the application into smaller features made the work easier to organise.
+- Using Postman provided a way to test API requests separately from the React interface.
+- Checking MySQL records helped me investigate whether data was being stored.
+- Organising screenshots made it easier to present the technical work in my portfolio.
+- Documenting user stories helped connect the development activities to the needs of homeowners, fundis and administrators.
+
+#### Challenges Encountered
+
+- Connecting the frontend, backend and database required careful checking of endpoints and request formats.
+- API testing involved troubleshooting errors before the expected results could be confirmed.
+- Features needed to be checked at more than one level, including the user interface, API response and database records.
+- Keeping the portfolio documentation consistent with the actual implementation required additional attention.
+
+#### Improvements for the Next Sprint
+
+- Test each API endpoint using valid, invalid and incomplete input.
+- Confirm that create, read, update and delete operations work as expected.
+- Check database records after submitting or updating information through the application.
+- Record testing results and outstanding issues in Trello.
+- Keep screenshots and documentation up to date as features change.
+- Prioritise fixing integration problems before adding more functionality.
 
 ### 5.3 Lessons Learned
 
-The following areas are important to reflect on during development:
+**1. Database design and integration**
 
-- **Database design:** Relationships and constraints should be planned carefully before integrating application features.
-- **API integration:** Frontend requests should match the backend endpoints, request formats and response structures.
-- **Testing:** Features should be tested after implementation, including unsuccessful and invalid requests.
-- **Task management:** Large tasks should be broken into smaller activities that are easier to track.
-- **Documentation:** Project evidence and progress records should be updated as work is completed.
+The database must support the application's requirements and use appropriate relationships and constraints. Checking stored records is an important part of confirming that database operations work as expected.
 
-These are areas for reflection, not a claim that every issue has already been resolved. Specific lessons should be recorded based on actual project experience.
+**2. API testing**
+
+Testing endpoints separately helps identify whether a problem comes from the request, backend logic or database connection. Tools such as Postman are useful for this purpose.
+
+**3. Frontend and backend integration**
+
+The React interface must send information in the format expected by the backend and handle the responses returned by the API. Integration should be tested rather than assumed to work.
+
+**4. Testing and verification**
+
+A feature should not be marked complete simply because its interface is visible. Its main operations should be tested, and the results should be checked against the acceptance criteria.
+
+**5. Agile planning and documentation**
+
+Maintaining a backlog, reviewing progress and recording outstanding tasks helps me understand what has been completed and what still needs work. Updating the portfolio alongside development also makes the final submission easier to prepare.
+
+### 5.4 Current Project Position
+
+At the time of preparing this portfolio, the project includes documented requirements, selected interface and development screenshots, and ongoing work involving application integration and review functionality.
+
+The next priority is to verify the implemented features through functional testing, confirm that the relevant database operations work correctly, resolve outstanding issues and update the backlog to reflect the actual status of each task.
+
+I will use the results of these checks to determine which features are complete, which require further work and which should be considered for future development.
 
 ---
 
@@ -550,29 +645,6 @@ This section provides links and screenshots that support the project documentati
 - [FundiShorp GitHub Pages Portfolio](https://kabelomoloko.github.io/FundiShorp-Portfolio/)
 - [FundiShorp Trello Board](https://trello.com/b/aviqvFPS/fundishorp)
 
-### 6.2 Screenshot Evidence
-
-The following screenshots are stored in the repository's `screenshots` folder:
-
-| Screenshot | Evidence provided |
-|---|---|
-| `databaseschema.png` | Database schema |
-| `backend.png` | Backend development |
-| `frontend.png` | Frontend development |
-| `register.png` | User registration interface |
-| `fundireg.png` | Fundi registration interface |
-| `role.png` | User roles |
-| `fundis.png` | Fundi interface |
-| `booking.png` | Booking or pricing-related interface |
-| `trello.png` | Agile project board |
-
-These screenshots are included to demonstrate selected aspects of the project. The implementation and testing status of each feature should be confirmed separately.
-
-### 6.3 References
-
-- Scrum Guides. *The Scrum Guide.* https://scrumguides.org/
-- GitHub Docs. *About READMEs.* https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes
-- GitHub Docs. *GitHub Pages.* https://docs.github.com/en/pages
 
 ---
 
