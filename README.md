@@ -397,6 +397,9 @@ Acceptance criteria are included to make the expected results testable. Verify t
 ### US02 — Build the layered backend
 
 **User story:** As a developer, I want the backend to follow a layered Java Spring Boot architecture so that the application remains maintainable and scalable.
+## Backend
+
+![FundiShorp Backend](screenshots/backend.png)
 
 **Tasks:**
 - Create domain classes using the Builder pattern.
@@ -417,6 +420,9 @@ Acceptance criteria are included to make the expected results testable. Verify t
 ### US03 — Establish the React frontend
 
 **User story:** As a developer, I want a reusable React frontend with routing and API integration so that new features can be developed consistently.
+## Frontend
+
+![FundiShorp Frontend](screenshots/frontend.png)
 
 **Tasks:**
 - Initialise the React project.
@@ -455,6 +461,9 @@ Acceptance criteria are included to make the expected results testable. Verify t
 ### US05 — Register and log in as a homeowner
 
 **User story:** As a homeowner, I want to register and log in so that I can browse listings and book fundis.
+## User Registration
+
+![FundiShorp User Registration](screenshots/register.png)
 
 **Tasks:**
 - Design registration and login forms.
@@ -475,6 +484,9 @@ Acceptance criteria are included to make the expected results testable. Verify t
 ### US06 — Register as a fundi
 
 **User story:** As a fundi, I want to register for a trade account so that I can create a storefront.
+## Fundi Registration
+
+![FundiShorp Fundi Registration](screenshots/fundireg.png)
 
 **Tasks:**
 - Design the fundi registration form.
@@ -542,6 +554,9 @@ Acceptance criteria are included to make the expected results testable. Verify t
 ### US10 — Create a storefront
 
 **User story:** As a fundi, I want to customise my storefront so that customers can learn about my business and services.
+## Fundi Interface
+
+![FundiShorp Fundi Interface](screenshots/fundis.png)
 
 **Tasks:**
 - Design the storefront layout.
