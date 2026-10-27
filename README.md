@@ -367,10 +367,8 @@ The screenshots provide supporting evidence of selected development activities. 
 - Matching fundis are displayed.
 - Empty results are handled appropriately.
 - Verification information is displayed accurately where available.
+![FundiShorp Search](screenshots/search.png)
 
-### Additional Stories for Future Development
-
-The following stories are possible extensions to the product backlog. They should be treated as planned or proposed work until their implementation is confirmed.
 
 ### US17 – Submit a Service Booking Request
 
