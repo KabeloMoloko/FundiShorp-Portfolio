@@ -377,6 +377,9 @@ Acceptance criteria are included to make the expected results testable. Verify t
 ### US01 — Establish the database schema
 
 **User story:** As a developer, I want the MySQL database designed before implementing backend layers so that data relationships and transactional integrity are established early.
+## Database Schema
+
+![FundiShorp Database Schema](screenshots/databaseschema.png)
 
 **Tasks:**
 - Design the ERD for users, fundis, storefronts, listings, orders, bookings, and reviews.
