@@ -237,6 +237,7 @@ The screenshots provide supporting evidence of selected development activities. 
 - Relevant verification information can be reviewed.
 - Verification decisions can be recorded if the workflow is implemented.
 - The status is available to the relevant parts of the application.
+![FundiShorp Verification Evidence](screenshots/veri.png)
 
 ### US09 – Display a Verified Badge
 
@@ -387,6 +388,7 @@ The following stories are possible extensions to the product backlog. They shoul
 - A review can be submitted through the implemented interface.
 - Review data is validated and stored.
 - Reviews are associated with the relevant fundi.
+![FundiShorp Reviews](screenshots/review.png)
 
 ### US19 – Manage Booking Requests
 
@@ -405,6 +407,7 @@ The following stories are possible extensions to the product backlog. They shoul
 - Administrative functions are restricted to authorised users.
 - Supported management actions are recorded or reflected in the application.
 - Invalid actions are handled appropriately.
+![FundiShorp Booking Management](screenshots/managebooking.png)
 
 ---
 
