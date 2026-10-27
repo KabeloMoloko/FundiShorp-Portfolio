@@ -536,21 +536,6 @@ The following Trello board is used to organise project tasks and review their cu
 
 The screenshots in the `screenshots` folder provide supporting evidence of selected application interfaces and development activities. They should be considered alongside functional testing results when determining whether a feature is complete.
 
-### 4.7 Sprint Review and Retrospective
-
-At the end of each sprint, I review the work against the sprint goal and identify any unfinished tasks.
-
-The main areas I need to consider are:
-
-- Whether the implemented features meet their acceptance criteria.
-- Whether frontend requests reach the correct backend endpoints.
-- Whether database records are saved and retrieved correctly.
-- Whether invalid requests and errors are handled appropriately.
-- Whether outstanding work has been recorded in Trello.
-- What should be prioritised during the next sprint.
-
-This process helps me make improvements incrementally and maintain a clear record of the project's development.
-
 ---
 
 ## 5. Agile Logbook
